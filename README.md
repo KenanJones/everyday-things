@@ -18,6 +18,9 @@ This repository will follow semantic versioning. This means as we continue with 
 ## Versions
 The following are the versioning changelogs.
 
+## Version 0.1.3
+We demonstrated that we can polymorph into bottles and that the latest `toString` method would resolve and that each child class can use `getCapacity`. Then we introduced the `HandSanitizerBottle`. This led us to the conclusion that we needed to refactor some to prevent us from drinking hand sanitizer on accident. This version reminds us what we did.
+
 ## Version 0.1.2
 In this version, we introduced the basic usage of *polymorphsim*. We create a basic main driver to put a bunch of bottles into a collection.
 

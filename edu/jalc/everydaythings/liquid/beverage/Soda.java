@@ -1,4 +1,4 @@
-package edu.jalc.everydaythings.liquid;
+package edu.jalc.everydaythings.liquid.beverage;
 
 public class Soda {
 
