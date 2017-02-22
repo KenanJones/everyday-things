@@ -24,4 +24,8 @@ public class BeerBottle {
 	public Beer getBeer(){
 		return this.beer;
 	}
+
+	public String toString(){
+		return this.getCapacity() + "oz " + this.getBeer();
+	}
 }

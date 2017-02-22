@@ -18,9 +18,15 @@ This repository will follow semantic versioning. This means as we continue with 
 ## Versions
 The following are the versioning changelogs.
 
-## Version 0.0.0
-Initial - no code.
+## Version 0.0.2
+This version simply adds the `toString` methods which were required.
 
 ## Version 0.0.1
 Adds base objects of `SodaBottle`, `BeerBottle`, `WaterBottle` with no inheritance. Also provides empty objects of `Soda`, `Beer`, and `Water` for *has-a* relationships.
+
+## Version 0.0.0
+Initial - no code.
+
+
+
 

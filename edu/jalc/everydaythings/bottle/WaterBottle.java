@@ -23,4 +23,8 @@ public class WaterBottle {
 	public Water getWater() {
 		return water;
 	}
+
+	public String toString(){
+		return this.getCapacity() + " oz" + this.getWater();
+	}
 }

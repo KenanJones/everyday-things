@@ -1,4 +1,8 @@
 package jalc.everydaythings.liquid;
 
 public class Soda {
+
+	public String toString(){
+		return "Soda";
+	}
 }
