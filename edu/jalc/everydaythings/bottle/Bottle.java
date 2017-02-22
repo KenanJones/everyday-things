@@ -1,4 +1,4 @@
-package jalc.everydaythings.bottle;
+package edu.jalc.everydaythings.bottle;
 
 abstract public class Bottle {
 

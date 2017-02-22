@@ -1,6 +1,6 @@
-package jalc.everydaythings.bottle;
+package edu.jalc.everydaythings.bottle;
 
-import jalc.everydaythings.liquid.Water;
+import edu.jalc.everydaythings.liquid.Water;
 
 public class WaterBottle extends Bottle {
 	private Water water;
@@ -20,6 +20,6 @@ public class WaterBottle extends Bottle {
 	}
 
 	public String toString(){
-		return this.getCapacity() + " oz" + this.getWater();
+		return this.getCapacity() + "oz " + this.getWater();
 	}
 }

@@ -1,4 +1,4 @@
-package jalc.everydaythings.liquid;
+package edu.jalc.everydaythings.liquid;
 
 public class Water {
 

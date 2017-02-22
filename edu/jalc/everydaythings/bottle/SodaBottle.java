@@ -1,6 +1,6 @@
-package jalc.everydaythings.bottle;
+package edu.jalc.everydaythings.bottle;
 
-import jalc.everydaythings.liquid.Soda;
+import edu.jalc.everydaythings.liquid.Soda;
 
 public class SodaBottle extends Bottle {
 

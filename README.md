@@ -18,6 +18,9 @@ This repository will follow semantic versioning. This means as we continue with 
 ## Versions
 The following are the versioning changelogs.
 
+## Version 0.1.2
+In this version, we introduced the basic usage of *polymorphsim*. We create a basic main driver to put a bunch of bottles into a collection.
+
 ## Version 0.1.1
 We decied that `Bottle` should be be intantiated, so we set the class to `abstract`
 
