@@ -21,3 +21,6 @@ The following are the versioning changelogs.
 ## Version 0.0.0
 Initial - no code.
 
+## Version 0.0.1
+Adds base objects of `SodaBottle`, `BeerBottle`, `WaterBottle` with no inheritance. Also provides empty objects of `Soda`, `Beer`, and `Water` for *has-a* relationships.
+
