@@ -18,6 +18,9 @@ This repository will follow semantic versioning. This means as we continue with 
 ## Versions
 The following are the versioning changelogs.
 
+## Version 0.1.0
+We realized we had duplicate code. Because of so, we decided to *abstract* out those features and put them into a parent class named `Bottle`, and *extend* `Bottle` into our 3 bottle-typed classes.
+
 ## Version 0.0.2
 This version simply adds the `toString` methods which were required.
 
