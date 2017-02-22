@@ -8,7 +8,7 @@ public class Bottle {
 		this.capacity = 0;
 	}
 
-	private Bottle(double capacity){
+	public Bottle(double capacity){
 		this.capacity = capacity;
 	}
 

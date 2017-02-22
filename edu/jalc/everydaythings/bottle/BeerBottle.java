@@ -2,23 +2,18 @@ package jalc.everydaythings.bottle;
 
 import jalc.everydaythings.liquid.Beer;
 
-public class BeerBottle {
+public class BeerBottle extends Bottle {
 
-	private double capacity;
 	private Beer beer;
 
 	private BeerBottle(){
-		this.capacity = 0;
+		super(0);
 		this.beer = null;
 	}
 
 	public BeerBottle(double capacity, Beer beer){
-		this.capacity = capacity;
+		super(capacity);
 		this.beer = beer;
-	}
-
-	public double getCapacity(){
-		return this.capacity;
 	}
 
 	public Beer getBeer(){
