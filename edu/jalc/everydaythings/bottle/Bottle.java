@@ -1,6 +1,6 @@
 package jalc.everydaythings.bottle;
 
-public class Bottle {
+abstract public class Bottle {
 
 	private double capacity;
 
