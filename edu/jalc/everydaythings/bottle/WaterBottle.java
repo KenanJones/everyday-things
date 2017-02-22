@@ -2,22 +2,17 @@ package jalc.everydaythings.bottle;
 
 import jalc.everydaythings.liquid.Water;
 
-public class WaterBottle {
-	private double capacity;
+public class WaterBottle extends Bottle {
 	private Water water;
 
 	private WaterBottle(){
-		this.capacity = 0;
+		super(0);
 		this.water = null;
 	}
 
 	public WaterBottle(double capacity, Water water) {
-		this.capacity = capacity;
+		super(capacity);
 		this.water = water;
-	}
-
-	public double getCapacity() {
-		return capacity;
 	}
 
 	public Water getWater() {
