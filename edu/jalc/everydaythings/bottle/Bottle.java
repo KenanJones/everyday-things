@@ -1,5 +1,7 @@
 package edu.jalc.everydaythings.bottle;
 
+import edu.jalc.everydaythings.liquid.Liquid;
+
 abstract public class Bottle {
 
 	private double capacity;
@@ -17,6 +19,11 @@ abstract public class Bottle {
 
 	public double getCapacity(){
 		return this.capacity;
+	}
+
+
+	protected Liquid getLiquid(){
+		return this.liquid;
 	}
 
 	public String toString(){
