@@ -3,7 +3,6 @@ package edu.jalc.everydaythings.bottle;
 import edu.jalc.everydaythings.bottle.beverage.BeerBottle;
 import edu.jalc.everydaythings.bottle.beverage.BeverageBottle;
 import edu.jalc.everydaythings.bottle.beverage.SodaBottle;
-import edu.jalc.everydaythings.bottle.beverage.WaterBottle;
 import edu.jalc.everydaythings.bottle.utility.HandSanitizerBottle;
 import edu.jalc.everydaythings.liquid.beverage.Beer;
 import edu.jalc.everydaythings.liquid.beverage.Soda;

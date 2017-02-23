@@ -21,8 +21,11 @@ The following are the versioning changelogs.
 ### Version 0.1.4
 We identified that the `toString` methods are repetitive and that we could use polymorphism to allow us to stay DRY.
 
-Because of this, we need to do a lot of refactoring. First, we need to create a `Liquid`. From that `Liquid`, we need create `Beverage` which extends `Liquid`, and `Soda` and `Beer` extend `Beverage`. But because `Water` is not only a `Beverage`, we need to move that class out of `beverage` and into the `liquid` package. Maybe later `Water` will identify which package is correct for it, but until then, moving it into `Liquid` is satisfactor.
+Because of this, we need to do a lot of refactoring. First, we need to create a `Liquid`. From that `Liquid`, we need create `Beverage` which extends `Liquid`, and `Soda` and `Beer` extend `Beverage`. But because `Water` is not only a `Beverage`, we need to move that class out of `beverage` and into the `liquid` package. Maybe later `Water` will identify which package is correct for it, but until then, moving it into `Liquid` is satisfactory.
 
+We also decided to change our beverages so we can keep using declarative accessor methods, e.g. `sodaBottle.getSoda()` vs `sodaBottle.getLiquid()`. In the process, we discover that `WaterBottle`'s constructor cannot pass a `Liquid` to a `Beverage` because a `Liquid` is not a `Beverage`. 
+
+This forces us to move `WaterBottle` out of `Beverage`. But now we have an issue of repetition that needs to be solved. This issue will be an extra credit assignment due Friday, March 3, 2017 at midnight. Simply for the repository and once you have made the changes, do a pull request. Those correct solutions will be given 5 points. 
 
 ### Version 0.1.3
 We demonstrated that we can polymorph into bottles and that the latest `toString` method would resolve and that each child class can use `getCapacity`. Then we introduced the `HandSanitizerBottle`. This led us to the conclusion that we needed to refactor some to prevent us from drinking hand sanitizer on accident. This version reminds us what we did.
