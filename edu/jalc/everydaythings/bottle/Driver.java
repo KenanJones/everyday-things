@@ -32,7 +32,9 @@ public class Driver {
 
 		beverages.add(new SodaBottle(20, new Soda()));
 		beverages.add(new BeerBottle(16, new Beer()));
-		beverages.add(new WaterBottle(20, new Water()));
+
+		// Will no longer work, but with extra credit, it can be turned back on.
+		// beverages.add(new WaterBottle(20, new Water()));
 
 		// notice how we can polymorph from beverage bottle to bottle?
 		for(Bottle bottle : beverages){

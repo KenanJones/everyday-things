@@ -1,6 +1,8 @@
 package edu.jalc.everydaythings.liquid.utility;
 
-public class HandSanitizer {
+import edu.jalc.everydaythings.liquid.Liquid;
+
+public class HandSanitizer extends Liquid {
 
 	public String toString(){
 		return "Hand Sanitizer";
