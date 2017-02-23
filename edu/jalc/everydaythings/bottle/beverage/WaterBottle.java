@@ -1,7 +1,6 @@
 package edu.jalc.everydaythings.bottle.beverage;
 
-import edu.jalc.everydaythings.bottle.Bottle;
-import edu.jalc.everydaythings.liquid.beverage.Water;
+import edu.jalc.everydaythings.liquid.Water;
 
 public class WaterBottle extends BeverageBottle {
 	private Water water;

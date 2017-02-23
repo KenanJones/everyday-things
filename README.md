@@ -18,6 +18,12 @@ This repository will follow semantic versioning. This means as we continue with 
 ## Versions
 The following are the versioning changelogs.
 
+### Version 0.1.4
+We identified that the `toString` methods are repetitive and that we could use polymorphism to allow us to stay DRY.
+
+Because of this, we need to do a lot of refactoring. First, we need to create a `Liquid`. From that `Liquid`, we need create `Beverage` which extends `Liquid`, and `Soda` and `Beer` extend `Beverage`. But because `Water` is not only a `Beverage`, we need to move that class out of `beverage` and into the `liquid` package. Maybe later `Water` will identify which package is correct for it, but until then, moving it into `Liquid` is satisfactor.
+
+
 ### Version 0.1.3
 We demonstrated that we can polymorph into bottles and that the latest `toString` method would resolve and that each child class can use `getCapacity`. Then we introduced the `HandSanitizerBottle`. This led us to the conclusion that we needed to refactor some to prevent us from drinking hand sanitizer on accident. This version reminds us what we did.
 

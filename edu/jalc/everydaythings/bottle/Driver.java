@@ -7,7 +7,7 @@ import edu.jalc.everydaythings.bottle.beverage.WaterBottle;
 import edu.jalc.everydaythings.bottle.utility.HandSanitizerBottle;
 import edu.jalc.everydaythings.liquid.beverage.Beer;
 import edu.jalc.everydaythings.liquid.beverage.Soda;
-import edu.jalc.everydaythings.liquid.beverage.Water;
+import edu.jalc.everydaythings.liquid.Water;
 import edu.jalc.everydaythings.liquid.utility.HandSanitizer;
 
 import java.util.ArrayList;
