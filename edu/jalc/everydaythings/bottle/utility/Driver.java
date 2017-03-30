@@ -12,11 +12,17 @@ public class Driver {
 		Pourable pourable = new Pourable() {
 			@Override
 			public void pour() {
-				System.out.println("yuck, you poured handsanitizer everwhere");
+				System.out.println("yuck, you poured handsanitizer everywhere");
 			}
 		};
 
 		HandSanitizerBottle pourableHandSanitizer = new HandSanitizerBottle(0, new HandSanitizer(), pourable);
 		pourable.pour();
+
+		HandSanitizerBottle lambdaVersion = new HandSanitizerBottle(0,
+						new HandSanitizer(),
+						() -> System.out.println("lamda version - yeah"));
+		lambdaVersion.pour();
+
 	}
 }
