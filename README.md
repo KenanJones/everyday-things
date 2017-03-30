@@ -18,6 +18,10 @@ This repository will follow semantic versioning. This means as we continue with 
 ## Versions
 The following are the versioning changelogs.
 
+
+### Version 0.2.0
+Today in lab we added two interfaces, `Pourable` and `Fillable`. Using the *Interface Segregation Principle* we determined we only needed method per interface, `public void pour()` and `public void fill()`, respectively. This version implements those two methods and demonstrates them in the application driver.
+
 ### Version 0.1.4
 We identified that the `toString` methods are repetitive and that we could use polymorphism to allow us to stay DRY.
 
@@ -28,11 +32,8 @@ We also decided to change our beverages so we can keep using declarative accesso
 This forces us to move `WaterBottle` out of `Beverage`. But now we have an issue of repetition that needs to be solved. This issue will be an extra credit assignment due Friday, March 3, 2017 at midnight. Simply for the repository and once you have made the changes, do a pull request. Those correct solutions will be given 5 points. 
 
 
-### Version 0.2.0
-Today in lab we added two interfaces, `Pourable` and `Fillable`. Using the *Interface Segregation Principle* we determined we only needed method per interface, `public void pour()` and `public void fill()`, respectively. This version implements those two methods and demonstrates them in the application driver.
 
-### Version 0.1.4
-Does a refactoring of `toString`
+
 
 ### Version 0.1.3
 We demonstrated that we can polymorph into bottles and that the latest `toString` method would resolve and that each child class can use `getCapacity`. Then we introduced the `HandSanitizerBottle`. This led us to the conclusion that we needed to refactor some to prevent us from drinking hand sanitizer on accident. This version reminds us what we did.
