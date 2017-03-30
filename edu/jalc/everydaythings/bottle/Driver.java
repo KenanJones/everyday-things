@@ -65,6 +65,6 @@ public class Driver {
 		System.out.println("Now, try that again! Pour out all handsanitizer, keeping everything else");
 		drinks.stream()
 						.filter((drink) -> drink.getLiquid() instanceof HandSanitizer)
-						.forEach((drink) -> drink.empty(() -> System.out.println("I FORCE YOU TO POUR OUT HANDSANITIZER")));
+						.forEach((drink) -> drink.pour(() -> System.out.println("I FORCE YOU TO POUR OUT HANDSANITIZER")));
 	}
 }

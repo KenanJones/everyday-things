@@ -33,7 +33,7 @@ abstract public class Bottle implements Pourable, Fillable {
 
 	public void fill(){ System.out.println(this.getClass().getSimpleName() + " just filled"); }
 
-	public void empty(Pourable pourable){
+	public void pour(Pourable pourable){
 		pourable.pour();
 	}
 }
