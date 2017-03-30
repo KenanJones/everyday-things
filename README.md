@@ -18,6 +18,12 @@ This repository will follow semantic versioning. This means as we continue with 
 ## Versions
 The following are the versioning changelogs.
 
+### Version 0.3.2
+Updates this readme
+
+### Version 0.3.1
+Lambda in HandSanantizer driver
+
 ### Version 0.3.0
 Adds anonymous interface to HandSanitizer
 
