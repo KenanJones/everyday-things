@@ -2,7 +2,7 @@ package edu.jalc.everydaythings.bottle;
 
 import edu.jalc.everydaythings.liquid.Liquid;
 
-abstract public class Bottle {
+abstract public class Bottle implements Pourable, Fillable {
 
 	private double capacity;
 	private Liquid liquid;
@@ -29,4 +29,8 @@ abstract public class Bottle {
 	public String toString(){
 		return this.getCapacity() + "oz " + this.getLiquid();
 	}
+
+	public void pour(){ System.out.println(this.getClass().getSimpleName() + " just poured"); }
+
+	public void fill(){ System.out.println(this.getClass().getSimpleName() + " just filled"); }
 }

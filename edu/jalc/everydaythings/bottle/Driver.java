@@ -40,5 +40,16 @@ public class Driver {
 		for(Bottle bottle : beverages){
 			System.out.println("You just drank a " + bottle);
 		}
+
+		// We now implemented the interfaces, lets polymorph to them
+		SodaBottle sodaBottle = new SodaBottle(20, new Soda());
+		Pourable pourable = sodaBottle;
+		Fillable fillable = sodaBottle;
+
+		System.out.print("as a Pourable: ");
+		pourable.pour();
+
+		System.out.print("as a Fillable: ");
+		fillable.fill();
 	}
 }
