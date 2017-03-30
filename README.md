@@ -18,6 +18,11 @@ This repository will follow semantic versioning. This means as we continue with 
 ## Versions
 The following are the versioning changelogs.
 
+### Version 0.2.2
+Fixes this file. No code changes
+
+### Version 0.2.1
+Failed attempt to fix this file
 
 ### Version 0.2.0
 Today in lab we added two interfaces, `Pourable` and `Fillable`. Using the *Interface Segregation Principle* we determined we only needed method per interface, `public void pour()` and `public void fill()`, respectively. This version implements those two methods and demonstrates them in the application driver.
