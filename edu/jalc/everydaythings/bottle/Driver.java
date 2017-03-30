@@ -12,7 +12,7 @@ import edu.jalc.everydaythings.liquid.utility.HandSanitizer;
 import java.util.ArrayList;
 
 public class Driver {
-	public static void main(String... args){
+	public static void main(String... args) {
 
 		// Yuk, we can drink hand sanitizer!
 		ArrayList<Bottle> drinks = new ArrayList<>();
@@ -21,7 +21,7 @@ public class Driver {
 		drinks.add(new WaterBottle(20, new Water()));
 		drinks.add(new HandSanitizerBottle(120, new HandSanitizer()));
 
-		for(Bottle bottle : drinks){
+		for (Bottle bottle : drinks) {
 			System.out.println("You just drank a " + bottle);
 		}
 
@@ -37,7 +37,7 @@ public class Driver {
 		// beverages.add(new WaterBottle(20, new Water()));
 
 		// notice how we can polymorph from beverage bottle to bottle?
-		for(Bottle bottle : beverages){
+		for (Bottle bottle : beverages) {
 			System.out.println("You just drank a " + bottle);
 		}
 
@@ -51,5 +51,20 @@ public class Driver {
 
 		System.out.print("as a Fillable: ");
 		fillable.fill();
+
+		// demo of passing lambda to method to do custom work
+		// I do not like drinking handsanitizer, so lets pour it out, keeping the rest
+		System.out.println("Now, pour out all handsanitizer, keeping everything else");
+		System.out.println(drinks);
+		drinks.stream()
+						.filter((drink) -> drink.getLiquid() instanceof HandSanitizer)
+						.forEach((drink) -> drink.pour());
+
+		// uh oh! our pourabe bottle is hand saniziter and by default it cannot be poured out! lets redo that with a
+		// passed handler to override the default pour
+		System.out.println("Now, try that again! Pour out all handsanitizer, keeping everything else");
+		drinks.stream()
+						.filter((drink) -> drink.getLiquid() instanceof HandSanitizer)
+						.forEach((drink) -> drink.empty(() -> System.out.println("I FORCE YOU TO POUR OUT HANDSANITIZER")));
 	}
 }

@@ -18,6 +18,9 @@ This repository will follow semantic versioning. This means as we continue with 
 ## Versions
 The following are the versioning changelogs.
 
+### Version 0.4.0
+Adds empty method that accepts a lambda. Demonstrates using filters, forEach, and passing custom lambdas to override class behavior.
+
 ### Version 0.3.2 && 0.3.3
 Updates this readme
 

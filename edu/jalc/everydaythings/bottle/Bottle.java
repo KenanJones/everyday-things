@@ -21,7 +21,6 @@ abstract public class Bottle implements Pourable, Fillable {
 		return this.capacity;
 	}
 
-
 	protected Liquid getLiquid(){
 		return this.liquid;
 	}
@@ -33,4 +32,8 @@ abstract public class Bottle implements Pourable, Fillable {
 	public void pour(){ System.out.println(this.getClass().getSimpleName() + " just poured"); }
 
 	public void fill(){ System.out.println(this.getClass().getSimpleName() + " just filled"); }
+
+	public void empty(Pourable pourable){
+		pourable.pour();
+	}
 }
