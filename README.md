@@ -22,7 +22,7 @@ The following are the versioning changelogs.
 Updates this readme
 
 ### Version 0.3.1
-Lambda in HandSanantizer driver
+Lambda in HandSanitizer driver
 
 ### Version 0.3.0
 Adds anonymous interface to HandSanitizer
