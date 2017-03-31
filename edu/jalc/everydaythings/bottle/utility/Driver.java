@@ -17,7 +17,7 @@ public class Driver {
 		};
 
 		HandSanitizerBottle pourableHandSanitizer = new HandSanitizerBottle(0, new HandSanitizer(), pourable);
-		pourable.pour();
+		pourableHandSanitizer.pour();
 
 		HandSanitizerBottle lambdaVersion = new HandSanitizerBottle(0,
 						new HandSanitizer(),
